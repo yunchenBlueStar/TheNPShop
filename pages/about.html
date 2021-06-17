@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--匯入Boostrap CSS(新版)-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<!--匯入Boostrap CSS(舊版)-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--匯入JQuery File(新版)-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+		<!--匯入JQuery File(舊版)-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!--Font Awesome(Icon)-->
+  <script src="https://kit.fontawesome.com/c561b4bf8b.js" crossorigin="anonymous"></script>
+    <!-- google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!--匯入圖片-->
+	<link rel="icon" href="../assets/Img/NP SHOP 3.png" type="image/x-icon">
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!--外部引進JavaScript-->
+  <script src="../assets/JS/about.js"></script>
+  <!--外部引進CSS-->
+  <link rel="stylesheet" href="../assets/CSS/about.css">
+
+  <!--匯入圖片-->
+  <link rel="icon" href="../assets/Img/NP SHOP 3.png" type="image/x-icon">
+    <title>NP Shop</title>
+</head>
+<body style="background-image: url('Img/bgImg.png'); background-repeat:no-repeat;background-attachment:fixed;background-position:center;">
+    <header>
+        <div class="container-fluid" id="headerRow1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarRow1">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="https://www.nike.com/tw/" target="_blank" style="width: 3%;">
+                    <img style="width:100%" src="../assets/Img/nike logo.png">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="margin: 1% 0% 1% 82%;">
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#joinMemberModal">加入我們</button>
+                      </li>
+                      <li class="nav-item" style="margin: 4px 20px 5px 0px;">
+                        <p>|</p>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">登入</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- modal -->
+                <div class="modal fade" 
+                     id="joinMemberModal" 
+                     tabindex="-1" 
+                     aria-labelledby="joinMemberModalModalLabel" 
+                     aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div id="modalTitleBox">
+                          <div id="modalTitleRow1">
+                            <div id="modalTitleLeft">
+                              <p>加入 <span style="font-weight: bold;">NP SHOP</span></p> 
+                            </div>
+                            <div id="modalTitleRight">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                          </div>
+                          <div id="modalTitleRow2">
+                            <p>成為會員</p>
+                          </div>
+                        </div>
+                        <div id="memberModalFormBox">
+                          <form id="memberForm" method="GET">
+                            <input type="email" id="userMail" name="userMail" style="width: 100%;margin-bottom: 20px;" placeholder="請輸入電子郵件" required>
+                            <input type="password" id="userPassword" name="userPassword" style="width: 100%;margin-bottom: 20px;" placeholder="請輸入密碼" required>
+                            <div id="genderBox" style="display: flex;margin-bottom: 20px;">
+                              <input type="text" id="userFirstName" name="userFirstName" style="width: 47.5%;margin-right: 5%;" placeholder="姓氏" required>
+                              <input type="text" id="userLastName" name="userLastName" style="width: 47.5%;" placeholder="名字" required>
+                            </div>
+                            <input type="date" id="userBirth" style="width: 100%;margin-bottom: 20px;" placeholder="請輸入生日" required>
+                            <div id="genderBox" style="margin-bottom: 20px;">
+                              <input type="radio" name="userGender" id="userMaleGender"  value="male" checked style="margin-right: 10px;"> 
+                              <label id="maleGenderLabel" for="userMaleGender" style="margin-right: 50px;">男</label> 
+                              <input type="radio" name="userGender"id="userFemaleGender" style="margin-right: 10px;" value="female">
+                              <label id="femaleGenderLabel" for="userFemaleGender">女</label>
+                            </div>
+                            <div id="memberFormSubmitBtnBox" style="text-align: center;margin-bottom: 15px;">
+                              <input type="submit" id="memberFormSubmitBtn"  value="加入">
+                            </div>
+                            <p style="text-align: center;">
+                              <span>已經是會員? </span>
+                              <span style="font-weight: bold;
+                              cursor: pointer;
+                              border-bottom: 1px solid;
+                              color: #1989fa;" 
+                              data-bs-dismiss="modal" aria-label="Close"
+                              data-bs-toggle="modal" data-bs-target="#loginModal"
+                              >登入</span>
+                            </p>
+                          </form>
+                        </div>                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" 
+                     id="loginModal" 
+                     tabindex="-1" 
+                     aria-labelledby="loginModalLabel" 
+                     aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">        
+                      <div class="modal-body">
+                        <div id="modalTitleBox">
+                          <div id="modalTitleRow1">
+                            <div id="modalTitleLeft" style="margin-left: 10%;">
+                              <p>登入您的 <span style="font-weight: bold;">NP SHOP</span> 帳號</p> 
+                            </div>
+                            <div id="modalTitleRight">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="memberModalFormBox">
+                          <form id="memberForm" method="GET">
+                            <input type="email" id="userLoginMail" name="userLoginMail" style="width: 100%;margin-bottom: 30px;" placeholder="請輸入電子郵件" required>
+                            <input type="password" id="userLoginPassword" name="userLoginPassword" style="width: 100%;margin-bottom: 50px;" placeholder="請輸入密碼" required>
+                            <div id="memberFormSubmitBtnBox" style="text-align: center;margin-bottom: 15px;">
+                              <input type="submit" id="memberFormSubmitBtn"  value="登入">
+                            </div>
+                            <p style="text-align: center;">
+                              <span>非會員? </span>
+                              <span style="font-weight: bold;
+                              cursor: pointer;
+                              border-bottom: 1px solid;
+                              color: #1989fa;" 
+                              data-bs-dismiss="modal" aria-label="Close"
+                              data-bs-toggle="modal" data-bs-target="#joinMemberModal"
+                              >加入我們</span>
+                            </p>
+                          </form>
+                        </div>                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid" id="headerRow2">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarRow2">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="width: 100px;height: 100px;">
+                <img src="../assets/Img/NP SHOP (4).png" style="width: 100%;margin: 25px 0px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 50px;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+                        <strong id="navInnerText">商品總覽</strong>
+                    </a>
+                    <div class="dropdown-menu" id="godosDropdown">
+                      <a class="dropdown-item" href="goods.html#Air_Force" id="goodsNAME"><strong>Air force</strong></a>
+                      <a class="dropdown-item" href="goods.html#Air_Max" id="goodsNAME"><strong>Air max</strong></a>
+                      <a class="dropdown-item" href="goods.html#Nike_Challenger" id="goodsNAME"><strong>Challenger OG</strong></a>
+                      <a class="dropdown-item" href="goods.html#Pegasus" id="goodsNAME"><strong>Pegasu</strong></a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+                        <strong id="navInnerText">鞋款簡介</strong>
+                    </a>
+                    <div class="dropdown-menu" id="godosDropdown">
+                      <a class="dropdown-item" href="goodsIntro.html#Air_Force" id="goodsNAME"><strong>Air force</strong></a>
+                      <a class="dropdown-item" href="goodsIntro.html#Air_Max" id="goodsNAME"><strong>Air max</strong></a>
+                      <a class="dropdown-item" href="goodsIntro.html#Nike_Challenger" id="goodsNAME"><strong>Challenger OG</strong></a>
+                      <a class="dropdown-item" href="goodsIntro.html#Pegasus" id="goodsNAME"><strong>Pegasu</strong></a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="member.html"><strong id="navInnerText">會員資料</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html"><strong id="navInnerText">關於我們</strong></a>
+                  </li>
+                </ul>
+                <form class="d-flex" id="toolsForm">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="padding-left: 70px;position: relative;height: 50px;">
+                  <button class="btn btn-outline-success" type="submit" style="position: absolute;">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <a href="like.html"><i class="far fa-heart"></i></a>
+                  <a href="shopCart.html"><i class="fas fa-shopping-cart"></i></a>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <section id="intro">
+      <div id="marqueeBox">
+        <marquee id="marqueeText"><span>貼心提醒&emsp;&emsp;|&emsp;&emsp;疫情期間請大家保護自己，也保護身邊的人</span></marquee>
+      </div>
+      <div id="aboutBox">
+        <div id="personBox">
+          <div id="personTop">
+            <figure class="personalityText" data-bs-toggle="modal" data-bs-target="#aboutModal1">
+              <img id="personalityImg" src="../assets/Img/個人照片/融1.jpg" style="height: 100%;"/>
+              <figcaption>
+                <h3>製圖文案寫手<span>珍珠美人魚</span></h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div id="personBottom">
+            <div id="personDetailTop">
+              <div id="personDetailTopLeft">
+                <p>呂彥融</p>
+              </div>
+              <div id="personDetailTopRight">
+                <a href="https://www.instagram.com/jasonlu.0511/" target="_blank">
+                  <i class="fab fa-instagram" style="font-size: 42px;margin-right: 15px;"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100039480786790" target="_blank">
+                  <i class="fab fa-facebook-f" style="    border: 3.5px solid;
+                  padding: 0px 0px 0px 10px;
+                  border-radius: 12px;
+                  height: 37px;
+                  font-size: 32px;
+                  margin-top: 3px;"></i>
+                </a>
+              </div>
+            </div>
+            <div id="personDetailBottom">
+              <p>雖然期末課程都是用遠距上課，但作業還是一樣沒變少。多媒確實比網程好理解，自己也獲得比較多成就感。</p>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" 
+        id="aboutModal1" 
+        tabindex="-1" 
+        aria-labelledby="joinMemberModalModalLabel" 
+        aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent;">
+              <div class="modal-body" style="width: 150%;margin-left: -25%;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;font-size: 50px;
+                position: absolute;
+                right: -100px;
+                top: -100px;"></button>
+                <img src="../assets/Img/個人照片/融2.jpg" style="width: 100%;border-radius: 20px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="personBox">
+          <div id="personTop" style="height: 320.5px">
+            <figure class="personalityText" data-bs-toggle="modal" data-bs-target="#aboutModal2">
+              <img id="personalityImg1" src="../assets/Img/個人照片/丞1_0.jpg" alt="sample70"  style="height: 100%;"/>
+              <figcaption>
+                <h3>程式狂熱者 <span>超Cary神隊友</span></h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div id="personBottom">
+            <div id="personDetailTop">
+              <div id="personDetailTopLeft">
+                <p>呂允丞</p>
+              </div>
+              <div id="personDetailTopRight">
+                <a href="https://www.instagram.com/lyc._.0723/" target="_blank">
+                  <i class="fab fa-instagram" style="font-size: 42px;margin-right: 15px;"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100004226764554" target="_blank">
+                  <i class="fab fa-facebook-f" style="    border: 3.5px solid;
+                  padding: 0px 0px 0px 10px;
+                  border-radius: 12px;
+                  height: 37px;
+                  font-size: 32px;
+                  margin-top: 3px;"></i>
+                </a>
+              </div>
+            </div>
+            <div id="personDetailBottom">
+              <p>這次的期末專案是要和甲班一起合,我覺得這次的專案前端網頁的部分我相當滿意,
+                因為和期中專案比起來我又更上一層樓了,前端的部分讓我非常的有成就感,希
+                望我能再更加進步,並且在與他人合作時能更加順利。</p>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" 
+        id="aboutModal2" 
+        tabindex="-1" 
+        aria-labelledby="joinMemberModalModalLabel" 
+        aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent;">
+              <div class="modal-body" style="width: 150%;margin-left: -25%;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;font-size: 50px;
+                position: absolute;
+                right: -100px;
+                top: -100px;"></button>
+                <img src="../assets/Img/個人照片/丞2.jpg" style="width: 70%;
+                margin: 0% 15%;
+                border-radius: 20px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="personBox">
+          <div id="personTop" style="height: 320.5px;">
+            <figure class="personalityText" data-bs-toggle="modal" data-bs-target="#aboutModal3">
+              <img id="personalityImg2" src="../assets/Img/個人照片/chi1_1.jpg" style="height: 100%;" />
+              <figcaption>
+                <h3>勇敢追夢<span>裝忙划水王</span></h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div id="personBottom">
+            <div id="personDetailTop">
+              <div id="personDetailTopLeft">
+                <p>王膺智</p>
+              </div>
+              <div id="personDetailTopRight">
+                <a href="https://www.instagram.com/yingchih0221/" target="_blank">
+                  <i class="fab fa-instagram" style="font-size: 42px;margin-right: 15px;"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100000571521377" target="_blank">
+                  <i class="fab fa-facebook-f" style="border: 3.5px solid;
+                  padding: 0px 0px 0px 10px;
+                  border-radius: 12px;
+                  height: 37px;
+                  font-size: 32px;
+                  margin-top: 3px;"></i>
+                </a>
+              </div>
+            </div>
+            <div id="personDetailBottom">
+              <p>這次的前後端合作讓我學到了很多，跟乙班的人一起合作真的很開心，一起完成一個專案也讓我很有成就感</p>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" 
+        id="aboutModal3" 
+        tabindex="-1" 
+        aria-labelledby="joinMemberModalModalLabel" 
+        aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent;">
+              <div class="modal-body" style="width: 150%;margin-left: -25%;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;font-size: 50px;
+                position: absolute;
+                right: -100px;
+                top: -100px;"></button>
+                <img src="../assets/Img/個人照片/chi2.jpg" style="width: 100%;border-radius: 20px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="personBox" style="margin-right: 0;">
+          <div id="personTop" style="height: 320.5px;">
+            <figure class="personalityText" data-bs-toggle="modal" data-bs-target="#aboutModal4">
+              <img id="personalityImg3" src="../assets/Img/個人照片/wei1_1.jpg" style="height: 100%;" />
+              <figcaption>
+                <h3>因為爬得慢，永遠跑第一<span>烏龜</span></h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div id="personBottom">
+            <div id="personDetailTop">
+              <div id="personDetailTopLeft">
+                <p>龔冠瑋</p>
+              </div>
+              <div id="personDetailTopRight">
+                <a href="https://www.instagram.com/wei_1019_" target="_blank">
+                  <i class="fab fa-instagram" style="font-size: 42px;margin-right: 15px;"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100003480587507" target="_blank">
+                  <i class="fab fa-facebook-f" style="    border: 3.5px solid;
+                  padding: 0px 0px 0px 10px;
+                  border-radius: 12px;
+                  height: 37px;
+                  font-size: 32px;
+                  margin-top: 3px;"></i>
+                </a>
+              </div>
+            </div>
+            <div id="personDetailBottom">
+              <p>興趣： 打籃球 攝影 烹飪<br>
+                專長：前端設計 攝影<br>
+                經過上學期多媒體課程的磨練後 ，有了很大的進步，而這學期的課程則是後端處理的工作，期許能從中學到專業技能</p>
+            </div>
+          </div>
+          <!-- modal -->
+        <div class="modal fade" 
+        id="aboutModal4" 
+        tabindex="-1" 
+        aria-labelledby="joinMemberModalModalLabel" 
+        aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent;">
+              <div class="modal-body" style="width: 150%;margin-left: -25%;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;font-size: 50px;
+                position: absolute;
+                right: -100px;
+                top: -100px;"></button>
+                <img src="../assets/Img/個人照片/wei2.jpg" style="width: 70%;
+                margin: 0% 15%;
+                border-radius: 20px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="fopterRow1">
+        <img src="../assets/Img/NP SHOP (4).png">
+      </div>  
+      <div id="fopterRow2">
+        <div id="detailBox">
+          <a href="https://www1.cycu.edu.tw/" target="_blank">
+            <i class="fas fa-church"></i>
+            <p>中原大學</p>
+          </a>
+        </div>
+        <div id="detailBox">
+          <a href="https://im.cycu.edu.tw/" target="_blank">
+            <i class="fas fa-school"></i>
+            <p>CYIM</p>
+          </a>
+        </div>
+        <div id="detailBox">
+          <a href="tel:+886-3-265-9999">
+            <i class="fas fa-phone-square-alt"></i>
+            <p>+886-3-265-9999</p>
+          </a>
+        </div>
+        <div id="detailBox">
+          <a href="mailto:h1253567@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <p>h1253567@gmail.com</p>
+          </a>
+        </div>
+      </div>
+      <div id="fopterRow3">
+        <p><i class="far fa-copyright"></i><span>2021 CYUM Design&ensp;:&ensp;THE NP SHOP</span></p>
+      </div>
+    </footer>
+</body>
+</html>
