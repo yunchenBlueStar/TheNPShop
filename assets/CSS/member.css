@@ -1,0 +1,348 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header CSS */
+#headerRow1{
+    background-color: black;
+    height: 50px;
+}
+#navbarRow1{
+    padding: 10px 50px;
+    background-color: Silver!important;
+    height: 50px;
+}
+
+#navbarRow1 button{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+#navbarRow1 li{
+    margin-right: 20px;
+}
+#navbarRow1 li button:hover{
+   color: gray;
+   border-color: gray;
+}
+#navbarRow1 .modal-content{
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+#navbarRow1 #modalTitleBox{
+    padding-bottom: 25px;
+}
+#navbarRow1 #modalTitleRow1{
+    display: flex;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleLeft{
+    width: 90%;
+    margin-left: 30%;
+    font-size: 30px;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleRight{
+    width: 10%;
+    text-align: right;
+    margin: 10px 0px;
+}
+#modalTitleRow2{
+    text-align: center;
+    font-size: 30px;
+}
+#navbarRow1 #memberModalFormBox{
+    padding: 0px 50px;
+}
+#memberFormSubmitBtn{
+    width: 85%;
+    border-radius: 70px;
+    border: 1px solid gray;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+#memberFormSubmitBtn:hover{
+    background-color: gainsboro;
+}
+#navbarRow2{
+    padding: 0px 90px;
+}
+#navbarRow2 #navInnerText{
+    border-bottom:  2px solid transparent;
+    transition: 1s ease;
+}
+#navbarRow2 #navInnerText:hover{
+    border-bottom: 2px solid gray;
+    transition: 1s ease;
+}
+#goodsDropdown{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+#goodsNAME{
+    color: gray;
+}
+#goodsNAME:hover{
+    color: black;
+}
+#navbarSupportedContent{
+    font-size: 20px;
+    font-weight: bold;
+}
+#navbarSupportedContent li{
+    margin-right: 20px;
+}
+#toolsForm button{
+    border: 0;
+    height: 50px;
+    width: 50px;
+    color: gray;
+}
+#toolsForm button:hover{
+    color: white;
+    background-color: gray;
+}
+#toolsForm button i{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#toolsForm button i:hover{
+    color: white;
+    cursor: pointer;
+}
+#toolsForm a{
+    text-decoration: none;
+    color: black;
+}
+#toolsForm i{
+    font-size: 30px;
+    margin: 10px 10px;
+}
+#toolsForm i:hover{
+    color: gray;
+    cursor: pointer;
+}
+/* header CSS */
+/* section CSS */
+#marqueeBox{
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+}
+#marqueeBox marquee{
+    margin: 0.65% 10%;
+    box-shadow: 1px 1px 10px lightgrey;
+    font-weight: bold;
+    color: gray;
+    border-radius: 50px;
+    font-size: 20px;
+}
+#memberDataBox{
+    padding: 3% 10%;
+}
+#memberDataBox button{
+    font-size: 25px;
+    font-weight: bold;
+}
+#memberDataBox .accordion-body{
+    padding: 4%;
+}
+#memberDataBox #flush-collapseOne{
+    font-size: 20px;
+}
+#profileTitle{
+    margin-right: 20px;
+}
+#profileUpdateBtn{
+    padding: 10px;
+    width: 20%;
+    font-size: 20px!important;
+    font-weight: 500!important;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 2%;
+    outline: none;
+}
+#profileUpdateBtn:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+#profileUpdateModal .modal-content{
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+#profileUpdateModal #modalTitleBox{
+    padding-bottom: 25px;
+}
+#profileUpdateModal #modalTitleRow1{
+    display: flex;
+}
+#profileUpdateModal #modalTitleRow1 #modalTitleLeft{
+    width: 90%;
+    margin-left: 30%;
+    font-size: 30px;
+}
+#profileUpdateModal #modalTitleRow1 #modalTitleRight{
+    width: 10%;
+    text-align: right;
+}
+#profileUpdateModal #memberModalFormBox{
+    padding: 0px 50px;
+}
+#memberFormSubmitBtn{
+    width: 85%;
+    border-radius: 70px;
+    border: 1px solid gray;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+#memberFormSubmitBtn:hover{
+    background-color: gainsboro;
+}
+#commentRowBox{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+}
+#commentIdBox{
+    width: 1%;
+    text-align: center;
+    margin-right: 5%;
+    font-size: 25px;
+}
+#commentGoodsImgBox{
+    width: 20%;
+    height: 20%;
+}
+#commentGoodsImgBox img{
+    width: 50%;
+}
+#commentGoodsNameStarBox{
+    width: 25%;
+    font-size: 25px;
+}
+#commentBox{
+    font-size: 20px;
+    width: 50%;
+}
+#commentBox #commentTitle{
+    font-weight: bold;
+}
+#commentBox #comment{
+    color: gray;
+    word-wrap: break-word;
+}
+
+#orderRowBox{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+}
+#orderIdBox{
+    width: 1%;
+    text-align: center;
+    margin-right: 5%;
+    font-size: 25px;
+}
+#orderGoodsImgBox{
+    width: 20%;
+    height: 20%;
+}
+#orderGoodsImgBox img{
+    width: 50%;
+}
+#orderGoodsNameStarBox{
+    width: 25%;
+    font-size: 25px;
+}
+#orderBox{
+    font-size: 25px;
+    width: 50%;
+    display: flex;
+    padding-top: 8%;
+}
+#orderBox #orderCounts{
+    width: 40%;
+}
+#orderBox #orderPrice{
+    color: #c00;
+    font-weight: bold;
+    width: 40%;
+}
+/* section CSS */
+/* 評價CSS */
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd; /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 20px; /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 #999;
+    }
+.full_star {
+    width: 80%; /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: 	DarkOrange; /*前景星星顏色*/
+}
+/* 評價CSS */
+/* footer CSS */
+footer{
+    margin-bottom: 40px;
+    width: 100%;
+    border-top: 1px solid LightGrey;
+    padding: 10px 30px;
+}
+#fopterRow1{
+    width: 5%;
+    margin: 3% 47.5%;
+}
+#fopterRow1 img{
+    width: 100%;
+}
+#fopterRow2{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    padding: 0px 100px;
+    margin-bottom: 30px;
+}
+#detailBox{
+    display: flex;
+    width: 25%;
+}
+#detailBox i{
+    font-size: 35px;
+    padding-right: 25px;
+}
+#detailBox p{
+    color: gray;
+}
+#detailBox p:hover{
+    color: darkgray;
+}
+#detailBox a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+#fopterRow3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgray;
+}
+#fopterRow3 i{
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* footerCSS */

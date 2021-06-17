@@ -1,0 +1,211 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header CSS */
+#headerRow1{
+    background-color: black;
+    height: 50px;
+}
+#navbarRow1{
+    padding: 10px 50px;
+    background-color: Silver!important;
+    height: 50px;
+}
+
+#navbarRow1 button{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+#navbarRow1 li{
+    margin-right: 20px;
+}
+#navbarRow1 li button:hover{
+   color: gray;
+   border-color: gray;
+}
+#navbarRow1 .modal-content{
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+#navbarRow1 #modalTitleBox{
+    padding-bottom: 25px;
+}
+#navbarRow1 #modalTitleRow1{
+    display: flex;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleLeft{
+    width: 90%;
+    margin-left: 30%;
+    font-size: 30px;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleRight{
+    width: 10%;
+    text-align: right;
+    margin: 10px 0px;
+}
+#modalTitleRow2{
+    text-align: center;
+    font-size: 30px;
+}
+#navbarRow1 #orderModalFormBox{
+    padding: 0px 50px;
+}
+#orderFormSubmitBtn{
+    width: 85%;
+    border-radius: 70px;
+    border: 1px solid gray;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+#orderFormSubmitBtn:hover{
+    background-color: gainsboro;
+}
+#navbarRow2{
+    padding: 0px 90px;
+}
+#navbarRow2 #navInnerText{
+    border-bottom:  2px solid transparent;
+    transition: 1s ease;
+}
+#navbarRow2 #navInnerText:hover{
+    border-bottom: 2px solid gray;
+    transition: 1s ease;
+}
+#navbarSupportedContent{
+    font-size: 20px;
+    font-weight: bold;
+}
+#navbarSupportedContent li{
+    margin-right: 20px;
+}
+/* header CSS */
+/* section CSS */
+#orderBox{
+    padding: 5% 10%;
+}
+#orderInitBtnFormBox{
+    display: flex;
+}
+#orderFormTitleBox{
+    display: flex;
+    font-size: 30px;
+    padding: 0% 0% 0% 10%;
+    border-bottom: 1px solid lightgray;
+    width: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+#orderInitBtnFormBox button{
+    width: 10%;
+    font-size: 21px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 50px;
+}
+#orderInitBtnFormBox button:hover{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+#orderFormTitleBox p{
+    margin-right: 5%;
+}
+#orderFormBox{
+    padding: 30px 0px 10px 120px;
+}
+#orderFormRowBox{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#orderFormRowBox p{
+    width: 5%;
+    font-size: 25px;
+    margin-right: 1.5%;
+}
+#orderFormRowBox input{
+    text-align: center;
+    width: 8%;
+
+}
+#orderFormRowBox button{
+    background-color: white;
+}
+#orderFormRowBox button:hover{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+#goTopBox{
+    border: 1px solid lightgray;
+    width: 150px;
+    height: 150px;
+    padding: 35px;
+    position: fixed;
+    right: 5%;
+    bottom: 20%;
+    border-radius: 20px;
+}
+#goTopA{
+    color: black;
+}
+#goTopA:hover{
+    color: gray;
+}
+/* section CSS */
+/* footer CSS */
+footer{
+    margin-bottom: 40px;
+    width: 100%;
+    border-top: 1px solid LightGrey;
+    padding: 10px 30px;
+}
+#fopterRow1{
+    width: 5%;
+    margin: 3% 47.5%;
+}
+#fopterRow1 img{
+    width: 100%;
+}
+#fopterRow2{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    padding: 0px 100px;
+    margin-bottom: 30px;
+}
+#detailBox{
+    display: flex;
+    width: 25%;
+}
+#detailBox i{
+    font-size: 35px;
+    padding-right: 25px;
+}
+#detailBox p{
+    color: gray;
+}
+#detailBox p:hover{
+    color: darkgray;
+}
+#detailBox a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+#fopterRow3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgray;
+}
+#fopterRow3 i{
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* footerCSS */

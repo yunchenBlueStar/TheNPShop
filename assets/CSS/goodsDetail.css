@@ -1,0 +1,385 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header CSS */
+#headerRow1{
+    background-color: black;
+    height: 50px;
+}
+#navbarRow1{
+    padding: 10px 50px 10px 56px;
+    background-color: Silver!important;
+    height: 50px;
+}
+
+#navbarRow1 button{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+#navbarRow1 li{
+    margin-right: 20px;
+}
+#navbarRow1 li button:hover{
+   color: gray;
+   border-color: gray;
+}
+#navbarRow1 .modal-content{
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+#navbarRow1 #modalTitleBox{
+    padding-bottom: 25px;
+}
+#navbarRow1 #modalTitleRow1{
+    display: flex;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleLeft{
+    width: 90%;
+    margin-left: 30%;
+    font-size: 30px;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleRight{
+    width: 10%;
+    text-align: right;
+    margin: 10px 0px;
+}
+#modalTitleRow2{
+    text-align: center;
+    font-size: 30px;
+}
+#navbarRow1 #memberModalFormBox{
+    padding: 0px 50px;
+}
+#memberFormSubmitBtn{
+    width: 85%;
+    border-radius: 70px;
+    border: 1px solid gray;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+#memberFormSubmitBtn:hover{
+    background-color: gainsboro;
+}
+#navbarRow2{
+    padding: 0px 90px 0px 96px;
+}
+#navbarRow2 #navInnerText{
+    border-bottom:  2px solid transparent;
+    transition: 1s ease;
+}
+#navbarRow2 #navInnerText:hover{
+    border-bottom: 2px solid gray;
+    transition: 1s ease;
+}
+#goodsDropdown{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+#goodsNAME{
+    color: gray;
+}
+#goodsNAME:hover{
+    color: black;
+}
+#navbarSupportedContent{
+    font-size: 20px;
+    font-weight: bold;
+}
+#navbarSupportedContent li{
+    margin-right: 20px;
+}
+#toolsForm button{
+    border: 0;
+    height: 50px;
+    width: 50px;
+    color: gray;
+}
+#toolsForm button:hover{
+    color: white;
+    background-color: gray;
+}
+#toolsForm button i{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#toolsForm button i:hover{
+    color: white;
+    cursor: pointer;
+}
+#toolsForm a{
+    text-decoration: none;
+    color: black;
+}
+#toolsForm i{
+    font-size: 30px;
+    margin: 10px 10px;
+}
+#toolsForm i:hover{
+    color: gray;
+    cursor: pointer;
+}
+/* header CSS */
+/* section CSS */
+#marqueeBox{
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+}
+#marqueeBox marquee{
+    margin: 0.65% 10%;
+    box-shadow: 1px 1px 10px lightgrey;
+    font-weight: bold;
+    color: gray;
+    border-radius: 50px;
+    font-size: 20px;
+}
+#goodsDetailBox{
+    display: flex;
+    padding: 5% 10%;
+}
+#goodsDetailLeft{
+    width: 40%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+#goodsDetailLeft img{
+    width: 80%;
+    margin-bottom: 5%;
+}
+#goodsDetailRight{
+    width: 40%;
+    margin-right: 10%;
+}
+#goodsDetailRight label{
+    cursor: pointer;
+}
+#goodsDetailRight input[type="radio"]{
+    display: none;
+}
+/* #goodsDetailRight input[type="radio"]:hover+label{
+    border-color: black;
+    color: black;
+}
+#goodsDetailRight input[type="radio"]:checked+label{
+    border-color: #1989fa;
+    color: #1989fa;
+}
+#goodsDetailRight input:checked+label::after{
+    border-color: #1989fa;
+    color: #1989fa;
+} */
+#goodsNameBox{
+    font-size: 40px;
+    font-weight: bold;
+}
+#goodsIntroBox{
+    display: flex;
+    margin-bottom: 10%;
+}
+#goodsIntroLeft{
+    width: 50%;
+    font-size: 20px;
+    color: darkgray;
+    font-weight: bold;
+}
+#goodsIntroRight{
+    display: flex;
+    width: 50%;
+    text-align: right;
+}
+
+#goodsDetailTop{
+    height: 50%;
+    margin-bottom: 10%;
+}
+#goodsIntroRight p{
+    width: 70%;
+    font-size: 25px;
+    color:  #c00;
+    font-weight: bold;
+}
+#goodsIntroRight i{
+    font-size: 25px;
+    width: 30%;
+    margin: 5px 0px;
+}
+#goodsSeclectionBox{
+    margin-bottom: 10%;
+}
+#goodsSeclectionBox label{
+    border: 1px solid #d3d3d3;
+    padding: 2.5% 5%;
+    margin-right: 20px;
+    z-index: -1;
+}
+#goodsSeclectionBox input[type="radio"]{
+    display: none;
+}
+#goodsSeclectionBox input[type="radio"]:hover+label{
+    border-color: black;
+    color: black;
+}
+#goodsSeclectionBox input[type="radio"]:checked+label{
+    border-color: #1989fa;
+    color: #1989fa;
+}
+#goodsSeclectionBox input:checked+label::after{
+    border-color: #1989fa;
+    color: #1989fa;
+}
+#goodsJoinBtnBox{
+    text-align: center;
+}
+#goodsJoinBtnBox button{
+    padding: 20px;
+    border-radius: 25px;
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+#goodsJoinBtnBox button:hover{
+    background-color: DimGray;
+    color: white;
+    font-weight: 100;
+}
+#goodsDetailBottom{
+    height: 50%;
+}
+#goodsDetailBottom button{
+    font-weight: bold;
+    font-size: 20px;
+}
+#initCommentBox{
+    padding: 20px;
+    text-align: center;
+}
+#commentBox{
+    margin-bottom: 10%;
+}
+#commentBox input{
+    border: 0;
+    border-bottom: 2px solid lightgray;
+    margin-right: 5%;
+}
+#initCommentForm button{
+    padding: 15px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 60%;
+    font-weight: 500;
+}
+#initCommentForm button:hover{
+    border-color: black;
+}
+#commentCardBox{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+#commentCardTop{
+    display: flex;
+}
+#commentCardTopLeft{
+    width: 50%;
+    font-size: 20px;
+}
+#commentCardTopRight{
+    width: 50%;
+    text-align: right;
+}
+/* section CSS */
+/* 評價CSS */
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd; /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 20px; /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 #999;
+    }
+.full_star {
+    width: 80%; /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: 	DarkOrange; /*前景星星顏色*/
+}
+.ratings1 {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd; /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 20px; /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 #999;
+    }
+.full_star1 {
+    width: 100%; /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: 	DarkOrange; /*前景星星顏色*/
+}
+/* 評價 */
+/* footer CSS */
+footer{
+    margin-bottom: 40px;
+    width: 100%;
+    border-top: 1px solid LightGrey;
+    padding: 10px 30px;
+}
+#fopterRow1{
+    width: 5%;
+    margin: 3% 47.5%;
+}
+#fopterRow1 img{
+    width: 100%;
+}
+#fopterRow2{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    padding: 0px 100px;
+    margin-bottom: 30px;
+}
+#detailBox{
+    display: flex;
+    width: 25%;
+}
+#detailBox i{
+    font-size: 35px;
+    padding-right: 25px;
+}
+#detailBox p{
+    color: gray;
+}
+#detailBox p:hover{
+    color: darkgray;
+}
+#detailBox a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+#fopterRow3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgray;
+}
+#fopterRow3 i{
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* footerCSS */

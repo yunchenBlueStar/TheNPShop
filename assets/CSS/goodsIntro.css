@@ -1,0 +1,304 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+/* header CSS */
+#headerRow1{
+    background-color: black;
+    height: 50px;
+}
+#navbarRow1{
+    padding: 10px 50px 10px 50px;
+    background-color: Silver!important;
+    height: 50px;
+}
+
+#navbarRow1 button{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+#navbarRow1 li{
+    margin-right: 20px;
+}
+#navbarRow1 li button:hover{
+   color: gray;
+   border-color: gray;
+}
+#navbarRow1 .modal-content{
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+#navbarRow1 #modalTitleBox{
+    padding-bottom: 25px;
+}
+#navbarRow1 #modalTitleRow1{
+    display: flex;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleLeft{
+    width: 90%;
+    margin-left: 30%;
+    font-size: 30px;
+}
+#navbarRow1 #modalTitleRow1 #modalTitleRight{
+    width: 10%;
+    text-align: right;
+    margin: 10px 0px;
+}
+#modalTitleRow2{
+    text-align: center;
+    font-size: 30px;
+}
+#navbarRow1 #memberModalFormBox{
+    padding: 0px 50px;
+}
+#memberFormSubmitBtn{
+    width: 85%;
+    border-radius: 70px;
+    border: 1px solid gray;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+#memberFormSubmitBtn:hover{
+    background-color: gainsboro;
+}
+#navbarRow2{
+    padding: 0px 85px 0px 90px;
+}
+#navbarRow2 #navInnerText{
+    border-bottom:  2px solid transparent;
+    transition: 1s ease;
+}
+#navbarRow2 #navInnerText:hover{
+    border-bottom: 2px solid gray;
+    transition: 1s ease;
+}
+#goodsDropdown{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+#goodsNAME{
+    color: gray;
+}
+#goodsNAME:hover{
+    color: black;
+}
+#navbarSupportedContent{
+    font-size: 20px;
+    font-weight: bold;
+}
+#navbarSupportedContent li{
+    margin-right: 20px;
+}
+#toolsForm button{
+    border: 0;
+    height: 50px;
+    width: 50px;
+    color: gray;
+}
+#toolsForm button:hover{
+    color: white;
+    background-color: gray;
+}
+#toolsForm button i{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#toolsForm button i:hover{
+    color: white;
+    cursor: pointer;
+}
+#toolsForm a{
+    text-decoration: none;
+    color: black;
+}
+#toolsForm i{
+    font-size: 30px;
+    margin: 10px 10px;
+}
+#toolsForm i:hover{
+    color: gray;
+    cursor: pointer;
+}
+/* header CSS */
+/* section CSS */
+#second{
+    padding: 5% 15%;
+}
+#marqueeBox{
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+}
+#marqueeBox marquee{
+    margin: 0.65% 10%;
+    box-shadow: 1px 1px 10px lightgrey;
+    font-weight: bold;
+    color: gray;
+    border-radius: 50px;
+    font-size: 20px;
+}
+#goodsIntroBox{
+    margin-bottom: 5%;
+}
+#goTopBox{
+    border: 1px solid lightgray;
+    width: 150px;
+    height: 150px;
+    padding: 35px;
+    position: fixed;
+    right: 5%;
+    bottom: 20%;
+    border-radius: 20px;
+}
+#goTopA{
+    color: black;
+}
+#goTopA:hover{
+    color: gray;
+}
+/* section CSS */
+/* footer CSS */
+footer{
+    margin-bottom: 40px;
+    width: 100%;
+    border-top: 1px solid LightGrey;
+    padding: 10px 30px;
+}
+#fopterRow1{
+    width: 5%;
+    margin: 3% 47.5%;
+}
+#fopterRow1 img{
+    width: 100%;
+}
+#fopterRow2{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    padding: 0px 100px;
+    margin-bottom: 30px;
+}
+#detailBox{
+    display: flex;
+    width: 25%;
+}
+#detailBox i{
+    font-size: 35px;
+    padding-right: 25px;
+}
+#detailBox p{
+    color: gray;
+}
+#detailBox p:hover{
+    color: darkgray;
+}
+#detailBox a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+#fopterRow3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgray;
+}
+#fopterRow3 i{
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* footerCSS */
+#easy{
+    width: 95%;
+    height: auto;
+}
+.easytitle{
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+#easyword{
+    margin-left: 16%;
+    width: 78%;
+    padding: 0% 4%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3%;
+}
+#img{
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: 10px;
+    border-radius: 20px;
+}
+.slider_container {
+    margin:20px  auto;
+    width: 900px;
+    height: 600px;
+    position: relative;
+}
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 10s linear infinite;
+            animation: round 10s linear infinite;
+}
+@-webkit-keyframes round {
+    10% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    60% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    10% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    60% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
